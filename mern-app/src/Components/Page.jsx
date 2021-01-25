@@ -5,8 +5,6 @@ const Page = ({ match }) => {
   const [displayedName, setDisplayedName] = useState(null);
   const [message, setMessage] = useState(null);
 
-  console.log(name);
-
   const pageHandle = async (param) => {
     const page = await fetch(`https://mern-api-robson.herokuapp.com/${param}`, {
       mode: 'cors',
